@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Frankie&#039;s New York Buffalo Wings - The Biggest Baddest Wings in Metro
+      Manila
+    </title>
+    <link
+      rel="icon"
+      href="https://frankiesnywings.com/web/img/icon/Frankies-Favicon.PNG"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@100;400;600;900&family=Open+Sans&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome 4.7-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 4.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://frankiesnywings.com/web/css/bootstrap.css"
+      type="text/css"
+    />
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/65168d64f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .about-content ul {
+        font-size: 1.8rem;
+        color: #fff !important;
+        /* text-align: center !important; */
+        line-height: 1 !important;
+      }
+
+      .main-text {
+        /*Main content about frankies*/
+        margin-top: 20px !important;
+        margin-bottom: 100px;
+      }
+
+      .main-banner {
+        z-index: 10;
+        position: relative;
+        /* margin-top: -20px !important; */
+      }
+
+      .ad-banner {
+        height: 25vh;
+      }
+
+      .about-content {
+        margin: 0px -3px !important;
+        padding: 0px !important;
+      }
+      .main-title {
+        font-size: 1.8rem !important;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .about-content p {
+          font-size: 2rem !important;
+          line-height: 1.2 !important;
+        }
+        .page-footer h6 {
+          font-size: 1.8rem !important;
+        }
+        .page-footer a {
+          font-size: 1.1rem !important;
+        }
+        .page-footer p {
+          font-size: 1.1rem !important;
+        }
+      }
+      /**Changing font-size media screen 991px **/
+      @media only screen and (max-width: 992px) {
+        .main-banner {
+          margin-top: -35px !important;
+          z-index: 10;
+          position: relative;
+        }
+        .ad-banner {
+          height: 12vh !important;
+        }
+        /**Changing font-size media screen **/
+        .page-footer h6 {
+          font-size: 1.8rem !important;
+        }
+        .page-footer a {
+          font-size: 1.6rem !important;
+        }
+        .page-footer p {
+          font-size: 1.6rem !important;
+        }
+        .page-footer i {
+          font-size: 1.8rem !important;
+        }
+      }
+      /**Changing font-size media screen 767px **/
+      @media only screen and (max-width: 768px) {
+        .about-content ul {
+          font-size: 2rem;
+          color: #fff !important;
+        }
+        .main-banner {
+          margin-top: -50px !important;
+          z-index: 10;
+          position: relative;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .fancy-title {
+          margin-top: -20px !important;
+        }
+        .title-about {
+          margin: 0px 2rem !important;
+        }
+        .main-title {
+          font-size: 1.5rem !important;
+        }
+        .main-text {
+          margin-top: 0px !important;
+          font-size: 1rem !important;
+        }
+        .about-content {
+          font-size: 2rem;
+          color: #fff !important;
+        }
+        .about-content ul {
+          font-size: 2rem;
+          color: #fff !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--HTML Anatomy: <elements ="attributes"-->
+
+    <!-- Nav Bar -->
+
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark"
+      style="background-color: rgba(0, 0, 0, 0.7)"
+    >
+      <a class="navbar-brand" href="#">
+        <img class="img-logo" src="images/fnyw.png" />
+      </a>
+      <button
+        class="navbar-toggler ml-auto custom-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features" style="color: #fff500">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing" style="color: aliceblue"
+              >MENU</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer" style="color: aliceblue"
+              >BRANCHES</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer" style="color: aliceblue"
+              >CAREERS</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Carousel start here 3/8/2022-->
+    <section class="background-section" id="">
+      <!--Responsive Container-fluid size of the viewport-->
+      <div class="container-fluid">
+        <!-- Title - responsive -->
+        <!--Column = 12 col = col-12 -->
+        <!--Col-lg: Desktop view / Col-md: Tablet view / Col-sm: Phone view-->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="images/fnywbgimage.jpg"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item" style="height: 70h">
+              <img
+                class="d-block w-100"
+                src="images/fnywbgimage1.jpg"
+                alt="Second slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+              style="background-color: #000; padding: 30px"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              style="background-color: #000; padding: 30px"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="content" style="background-color: #000">
+      <div class="content-wrap pt-0 pb-3" style="overflow: visible">
+        <div class="section bg-transparent m-0 pb-0 mb-3 clearfix">
+          <div class="container about">
+            <div class="fancy-title title-border title-center title-about">
+              <h3 class="text-white text-xl uppercase main-title">
+                Frankie&#039;s
+              </h3>
+            </div>
+            <div class="row">
+              <div class="about-content">
+                <ul
+                  style="list-style-type: none"
+                  class="text-white text-lg text-justify main-text px-5"
+                >
+                  <li class="pt-3">
+                    At Frankie's, we believe in offering delicious and
+                    reasonably priced food along with excellent customer
+                    service. We make sure that every member of the Frankie's
+                    family carries a strong passion and enthusiasm for the food
+                    that we serve.
+                  </li>
+
+                  <li class="pt-3">
+                    With 14 perfectly mastered flavors to choose from, we're
+                    sure that there is a flavor for everyone. We offer the
+                    biggest wings in town and no other establishments can boast
+                    chicken wings that's as fresh, as filling, and as flavorful
+                    as Frankie's.
+                  </li>
+                  <li class="pt-3">
+                    We thrive with the promise of
+                    <span style="background: red">
+                      Great Food, Awesome Experience!</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-img col-xl-12">
+        <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+        <div class="card-header"></div>
+        <div class="">
+          <a href="https://www.orderfrankies.com/" target="_blank">
+            <img class="banner-product" src="images/adds.jpg" alt="design3" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+
+    <section class="white-section" id="testimonials">
+      <div class="container-fluid">
+        <h2 class="section-heading fancy-title title-center">Testimonials</h2>
+
+        <div class="content-slider">
+          <div class="slider">
+            <div class="mask">
+              <ul>
+                <li class="anim1">
+                  <div class="quote">
+                    For a food court option, this one is off the charts, From
+                    the moment we entered the line until we finished our food,
+                    the line was consistently long. I can&rsquo;t even say
+                    it&rsquo;s because it&rsquo;s trendy; it&rsquo;s pretty darn
+                    good.&amp;nbsp;For a food court option, this one is off the
+                    charts, From the moment we entered the line until we
+                    finished our food, the line was consistently long. I
+                    can&rsquo;t even say it&rsquo;s because it&rsquo;s trendy;
+                    it&rsquo;s pretty darn good.&rdquo;
+                  </div>
+                  <div class="source">- Juan</div>
+                </li>
+                <li class="anim2">
+                  <div class="quote">
+                    Frankies was a godsend yesterday. Resuscitates my love for
+                    chicken. My attempt to transition into veganism pretty much
+                    went right out the window.
+                  </div>
+                  <div class="source">- Juli</div>
+                </li>
+                <li class="anim3">
+                  <div class="quote">
+                    Without a pause, without a doubt, in a heartbeat, i&#39;ll
+                    keep choosing you @frankieswings!
+                  </div>
+                  <div class="source">- Joan</div>
+                </li>
+                <li class="anim4">
+                  <div class="quote">
+                    Loyal customer of Frankie&rsquo;s UPTC here! Sa daming beses
+                    kong bumalik dito solid ang service at ang food. Isang
+                    server na talagang tumatak sa akin ay si Matt kasi hindi
+                    lang mabait at marunong magbigay ng magandang customer
+                    service! Good job Frankie&rsquo;s UPTC!
+                  </div>
+                  <div class="source">- Justine</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Carousel -->
+
+        <!-- Press -->
+        <h3 class="program-language">Wings Flavor</h3>
+        <img class="press-img" src="images/bucketwings.png" alt="html5-logo" />
+        <img class="press-img" src="images/bucketwings.png" alt="css3-logo" />
+        <img class="press-img" src="images/bucketwings.png" alt="fnyw-logo" />
+        <h3 class="webdev-tools">All Time Favorite</h3>
+        <img class="web-dev-tools" src="images/bucketwings.png" alt="vs-logo" />
+        <img
+          class="web-dev-tools"
+          src="images/bucketwings.png"
+          alt="aips-logo"
+        />
+        <img
+          class="web-dev-tools"
+          src="images/bucketwings.png"
+          alt="bootstrap-logo"
+        />
+        <img
+          class="web-dev-tools"
+          src="images/bucketwings.png"
+          alt="laravel-logo"
+        />
+        <img
+          class="web-dev-tools"
+          src="images/bucketwings.png"
+          alt="xampp-logo"
+        />
+        <img
+          class="web-dev-tools"
+          src="images/bucketwings.png"
+          alt="chromedevtools-logo"
+        />
+      </div>
+    </section>
+
+    <!-- What's New -->
+
+    <section class="white-section" id="whatsnew">
+      <h2 class="section-heading fancy-title title-center">What's New</h2>
+      <!--<p>Simple and affordable price plans bluh bluh.</p>-->
+
+      <!-- card-deck to column this 3 card class inside the div class="card-deck" -->
+      <div class="row">
+        <!-- <div class="card-deck"> where using row instead for the purpose of grid bootstrap -->
+        <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+        <div class="whatsnew-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3></h3>
+            </div>
+            <div class="card-body">
+              <a href="https://frankiesnywings.com/blogs/more-great-food">
+                <img
+                  class="product1"
+                  src="http://frankiesnywings.com/uploads/blog/20211116/resized/0rey8im02h.png"
+                  alt="design2"
+                />
+                <div id="zoom"></div>
+                <h2 class="whatsnew-text">Text here</h2>
+                <p>Text Here</p>
+                <button type="button" class="btn btn-lg btn-dark btn-block">
+                  Check it now!
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew-column col-lg-4 col-md-6">
+          <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+          <div class="card">
+            <div class="card-header">
+              <h3></h3>
+            </div>
+            <div class="card-body">
+              <a href="https://frankiesnywings.com/blogs/more-great-food">
+                <img
+                  class="product1"
+                  src="http://frankiesnywings.com/uploads/blog/20211122/resized/7mbi0cgvky.png"
+                  alt="design2"
+                />
+                <div id="zoom"></div>
+                <h2 class="whatsnew-text">Text here</h2>
+                <p>Text Here</p>
+                <button type="button" class="btn btn-lg btn-dark btn-block">
+                  Check it now!
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsnew-column col-lg-4">
+          <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+          <div class="card">
+            <div class="card-header">
+              <h3></h3>
+            </div>
+            <div class="card-body">
+              <a href="https://frankiesnywings.com/blogs/more-great-food">
+                <img
+                  class="product1"
+                  src="http://frankiesnywings.com/uploads/blog/20211122/resized/eovzlxvbfz.png"
+                  alt="design2"
+                />
+                <div id="zoom"></div>
+                <h2 class="whatsnew-text">Text here</h2>
+                <p>Text Here</p>
+                <button type="button" class="btn btn-lg btn-dark btn-block">
+                  Check it now!
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section class="colored-section" id="cta">
+      <h3 class="message-heading">FOLLOW FRANKIE'S ON INSTAGRAM</h3>
+      <!-- card-deck to column this 3 card class inside the div class="card-deck" -->
+      <div class="row">
+        <!-- <div class="card-deck"> where using row instead for the purpose of grid bootstrap -->
+        <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJhfupaHjld/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/dkkce46t8y.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJhfupaHjld/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/dkkce46t8y.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJmpVO8nb97/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/lmcynspo3l.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJxDb3yBlHk/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/wgzcgltxe6.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+        <!--next-->
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJhfupaHjld/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/dkkce46t8y.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJmpVO8nb97/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/lmcynspo3l.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJxDb3yBlHk/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/wgzcgltxe6.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <a href="https://www.instagram.com/p/CJhfupaHjld/" target="_blank">
+            <img
+              class="insta2"
+              src="https://hsdataserver.blob.core.windows.net/frankiesdata/instagram/20210428/resized/dkkce46t8y.jpg"
+              alt="Frankies Best Chicken"
+            />
+          </a>
+        </div>
+      </div>
+      <!--<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i>
+      Download</button>-->
+    </section>
+
+    <!-- Footer -->
+    <section class="page-footer">
+      <div class="font-small unique-color-dark">
+        <div style="background-color: #ff0000">
+          <div class="container">
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+              <!-- Grid column -->
+              <div
+                class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
+              >
+                <h6 class="mb-0 text-uppercase" style="color: #fff">
+                  Get connected with us on social networks!
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg footer-icon"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter fa-lg footer-icon"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g fa-lg footer-icon"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg footer-icon"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram fa-lg footer-icon"> </i>
+                </a>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-12 mx-auto mb-4">
+              <!-- Content -->
+              <img class="footer-logo" src=" images/fnyw.png" />
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-12 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Products</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+                color=" red"
+                ;
+              />
+              <p>
+                <a href="#!">Buffalo Wings</a>
+              </p>
+              <p>
+                <a href="#!">New York Cheese Cake</a>
+              </p>
+              <p>
+                <a href="#!">Frankie's Hamburger</a>
+              </p>
+              <p>
+                <a href="#!">Beer</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-12 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+                color=" red"
+                ;
+              />
+              <p>
+                <a href="#!">Careers</a>
+              </p>
+              <p>
+                <a href="#!">We Deliver</a>
+              </p>
+              <p>
+                <a href="#!">Let's Collab!</a>
+              </p>
+              <p>
+                <a href="#!">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-12 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr
+                class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px"
+                color=" red"
+                ;
+              />
+              <p><i class="fas fa-home mr-3"></i> Pasig City, Phil</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footercopright" style="background-color: rgb(255, 0, 0)">
+          <div
+            class="footer-copyright text-center text-uppercase py-3"
+            style="color: #fff"
+          >
+            Frankie's New York Buffalo Wings | © 2022
+            <!--<a href="https:///"> frankiesnywings.com</a>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <script src="jss/zoom.js"></script>
+    <!-- Close navbar after clicking outside -->
+    <script>
+      $(document).ready(function () {
+        $(document).click(function (event) {
+          var clickover = $(event.target);
+          var _opened = $(".navbar-collapse").hasClass("show");
+          if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,2 +1,1 @@
-# projfnyw
-company project
+TinDog Starting Files
