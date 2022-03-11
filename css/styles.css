@@ -501,6 +501,9 @@ body{
   width: 200px;
   padding: 0 0 2rem 0;
 }
+.footer-copyright {
+  font-size: 1.4rem;
+}
 
 .fa-facebook-f,
 .fa-twitter, 
@@ -510,36 +513,21 @@ body{
   color: #ffffff;
 }
 
-footer a {
-  color: #999;
+.page-footer i:hover, .page-footer i:focus {
+  color: rgb(0, 0, 0);
   text-decoration:none;
-}
-
-footer a:hover, footer a:focus {
-  color: #aaa;
-  text-decoration:none;
-  border-bottom:1px dotted #999;
-}
-
-footer .form-control {
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    color: #d1d2d2;
-    padding: 0.7em 1em;
 }
 
 
 
 /* !Slider Add */
 
-.product1:hover {
+/*.product1:hover {
   -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  /*-webkit-transform: scale(1.5); /* Safari 3-8 */
+  /*transform: scale(1.5); 
   position:relative;
-}
+}*/
 
 .product2:hover {
   -ms-transform: scale(1.5); /* IE 9 */
