@@ -128,8 +128,39 @@ body{
 
 /* !Navigation Bar */
 
-.navbar {
-  padding: 1rem;
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /*padding: 1rem;*/
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  transition: 0.5s;
+ /* background-color: rgba(0, 0, 0, 0.8)*/
+}
+
+nav.sticky {
+  background: rgb(0, 0, 0);
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.05);
+}
+
+nav .navigation {
+  position: relative;
+  display: flex;
+}
+nav .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .navigation li a {
+  text-decoration: none;
+  font-weight: 300;
 }
 
 .navbar-brand {
@@ -145,28 +176,15 @@ body{
   border-top: 2px solid #eee
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  width: 2.5em;
-  height: 2.5em;
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: rgb(255, 0, 0);
-} 
-
-.custom-toggler.navbar {
-  border-color: rgb(255, 0, 0);
-} 
-
 /* !Navigation Text Color */
 .nav-link {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Bangers', sans-serif;
+  text-shadow: #000 !important;
 }
 
 .nav-link a {
-  color: #FFF !important
+  color: #FFF !important;
 }
 
 .nav-link:hover {
@@ -177,15 +195,6 @@ body{
   color: #fff500!important;
 }
 
- .navbar.transparent.navbar-inverse .navbar-inner {
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-}
 
 .profile-me {
   border-radius: 100%;
@@ -262,6 +271,12 @@ body{
 .img-logo {
   padding-left: 10px;
   height: 6rem;
+}
+
+.order-img {
+  width: 40%;
+  margin-bottom: 30%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner-img {
@@ -460,6 +475,11 @@ body{
  width: 90%;
 }
 
+.about-img {
+  width: 100%;
+  margin: 3rem 0;
+ }
+
 .insta2 {
  width: 90%;
  padding: 10px;
@@ -483,16 +503,6 @@ body{
   padding: 3%;
 }
 
-.image-iso {
-  animation-name: skill-ghost;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transition: transform .2s;
-  width: 40%;
-  margin: 0 auto 0 auto;
-  position: relative;
-}
 
 /* !Footer */
 
@@ -539,12 +549,6 @@ body{
   transform: scale(1.5); 
   position:relative;
 }
-
-.image-iso {
-  animation-name: image-iso ;
-  animation-timing-function: ease;
-}
-
 
 @keyframes image-iso {
   0%   { transform: translateY(0); }
@@ -950,10 +954,56 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
         }
       }
 
-      @media only screen and (max-width: 983px) {
+      @media only screen and (max-width: 990px) {
         .menu-header {
           flex-direction: column;
         }
+
+        nav,
+        nav.sticky
+        {
+          padding: 10px 40px;
+        }
+
+        nav .navigation{
+          display: none;
+        }
+
+        nav .navigation.active {
+          width: 100%;
+          height: calc(100% - 68%);
+          position: fixed;
+          top: 115px;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background: rgb(0, 0, 0);
+        }
+
+        .menuToggle {
+          position: relative;
+          width: 65px;
+          height: 65px;
+          background-image: url("/images/menu1.png");
+          background-size: 45px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          border-color: rgb(255, 0, 0);
+          } 
+        
+        .menuToggle.active {
+          background-image: url("/images/close1.png");
+          background-size: 45px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        nav.sticky .menuToggle {
+          filter: invert(1);
+        }
+
         /* .menu-header .menu-header-title:last-child {
         margin-top: 20px !important;
     } */
