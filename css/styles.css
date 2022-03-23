@@ -986,7 +986,7 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
           position: relative;
           width: 65px;
           height: 65px;
-          background-image: url("images/menu1.png");
+          background-image: url("https://raw.githubusercontent.com/Gino2027/projfnyw/main/images/menu1.png");
           background-size: 45px;
           background-repeat: no-repeat;
           background-position: center;
@@ -995,7 +995,7 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
           } 
         
         .menuToggle.active {
-          background-image: url("images/close1.png");
+          background-image: url("https://raw.githubusercontent.com/Gino2027/projfnyw/main/images/close1.png");
           background-size: 45px;
           background-repeat: no-repeat;
           background-position: center;
