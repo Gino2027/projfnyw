@@ -8,7 +8,7 @@
     </title>
     <link
       rel="icon"
-      href="https://frankiesnywings.com/web/img/icon/Frankies-Favicon.png"
+      href="https://frankiesnywings.com/web/img/icon/Frankies-Favicon.PNG"
     />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -60,7 +60,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
     <style>
       .about-content ul {
         font-size: 1.8rem;
@@ -196,48 +195,29 @@
 
     <!-- Nav Bar -->
 
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark"
-      style="background-color: rgba(0, 0, 0, 0.7)"
-    >
+    <nav style="background-color: #000">
       <a class="navbar-brand" href="#">
         <img class="img-logo" src="images/fnyw.PNG" />
       </a>
-      <button
-        class="navbar-toggler ml-auto custom-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" style="color: #fff500"
-              >HOME</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="menu.html" style="color: aliceblue"
-              >MENU</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer" style="color: aliceblue"
-              >BRANCHES</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer" style="color: aliceblue"
-              >CAREERS</a
-            >
-          </li>
-        </ul>
-      </div>
+      <div class="navbar-toggler menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="color: #fff500">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html" style="color: aliceblue">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer" style="color: aliceblue"
+            >BRANCHES</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer" style="color: aliceblue"
+            >CAREERS</a
+          >
+        </li>
+      </ul>
     </nav>
     <!--Carousel start here 3/8/2022-->
 
@@ -314,7 +294,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-1"
+                        href="food-hall-menu.html/food-hall-menu#tabs-1"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-1"
@@ -333,7 +313,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-7"
+                        href="food-hall-menu.html/food-hall-menu#tabs-7"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-2"
@@ -352,7 +332,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-9"
+                        href="food-hall-menu.html/food-hall-menu#tabs-9"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-3"
@@ -371,7 +351,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-10"
+                        href="food-hall-menu.html/food-hall-menu#tabs-10"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-4"
@@ -390,7 +370,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-3"
+                        href="food-hall-menu.html/food-hall-menu#tabs-3"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-5"
@@ -409,7 +389,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-2"
+                        href="food-hall-menu.html/food-hall-menu#tabs-2"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-6"
@@ -428,7 +408,7 @@
                     >
                       <a
                         class="dishes ui-tabs-anchor"
-                        href="menu.html/restaurant-menu#tabs-4"
+                        href="food-hall-menu.html/food-hall-menu#tabs-4"
                         role="presentation"
                         tabindex="-1"
                         id="ui-id-7"
@@ -1712,14 +1692,17 @@
         </div>
       </div>
     </section>
-    <!-- Footer -->
+    <script
+      id="ze-snippet"
+      src="https://static.zdassets.com/ekr/snippet.js?key=36cea5f9-a836-4028-8a82-9ab6895cdf44"
+    ></script>
+    <!-- End of frankiesnewyorkbuffalowings Zendesk Widget script -->
     <script src="jss/zoom.js"></script>
-    <!-- Close navbar after clicking outside -->
-
     <script src="jss/functions.js"></script>
     <script src="jss/jquery.js"></script>
     <script src="jss/plugins.min.js"></script>
-    <script>
+    <!-- Close navbar after clicking outside -->
+    <script type="text/javascript">
       $(document).ready(function () {
         $(document).click(function (event) {
           var clickover = $(event.target);
@@ -1729,6 +1712,18 @@
           }
         });
       });
+
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
     </script>
   </body>
 </html>
